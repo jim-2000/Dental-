@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+<!---->
+{% block title %} {% endblock title %}
+<!---->
+{% load static %}
+<!-- ***** Header Area End ***** -->
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'reg.css' %}"> {% endblock stylesheet %}
+<!---->
+{% block content %}
+
+<section id="reg">
+
+    <div class="login">
+        <div class="login-triangle"></div>
+
+        <h2 class="login-header">Log in</h2>
+
+        <form class="login-container container-fluid">
+            <p><input type="text" name="f_name" placeholder="first_name "></p>
+            <p><input type="text" name="l_name" placeholder="last_name"></p>
+            <p><input type="text" name="username" placeholder="Username"></p>
+            <p><input type="email" name="email" placeholder="Email"></p>
+            <p><input type="password" name="password" placeholder="Password"></p>
+            <p><input type="password" name="password2" placeholder="Confirm password"></p>
+
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </div>
+
+</section>
+
+<!-- ***** Footer Area Start ***** -->
+{% endblock content %}
+<!-- ***** Footer Area Start ***** -->
+{% block js %} {% endblock js %}
